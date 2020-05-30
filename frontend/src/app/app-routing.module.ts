@@ -7,11 +7,11 @@ export const routes: Routes = [
     path: '',
     loadChildren: () => import('./public/public.module').then(m => m.PublicModule)
   },
-  // {
-  //   path: '',
-  //   loadChildren: () => import('./applications/applications.module').then(m => m.ApplicationsModule),
-  //   canActivateChild: [UserGuard]
-  // },
+  {
+    path: '',
+    loadChildren: () => import('./components/main.module').then(m => m.MainModule),
+    // canActivateChild: [UserGuard]
+  },
   { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: '**', component: NotAccessComponent }
 ];
