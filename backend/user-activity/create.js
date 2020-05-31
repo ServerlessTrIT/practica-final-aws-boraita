@@ -10,8 +10,8 @@ module.exports.handler = async (event, context) => {
 		Item: {
 			id: { S: monitor['id'] },
 			name: { S: monitor['name'] },
-			surname: { N: monitor['surname'] },
-			gender: { N: monitor['gender'] },
+			surname: { S: monitor['surname'] },
+			gender: { S: monitor['gender'] },
 		},
 	};
 	const result = await ddb
@@ -23,16 +23,9 @@ module.exports.handler = async (event, context) => {
 			}
 		})
 		.promise();
-	console.log('result ->', result);
+
 	return {
 		statusCode: 200,
-		body: JSON.stringify(
-			{
-				message: 'Created Item!',
-				input: monitor,
-			},
-			null,
-			2
-		),
+		body: JSON.stringify(monitor, null, 2),
 	};
 };

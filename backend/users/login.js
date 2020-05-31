@@ -32,8 +32,7 @@ exports.handler = async (event) => {
 				})
 				.promise();
 			body = {
-				token: result['AuthenticationResult']['IdToken'],
-				message: 'You are loggingIn',
+				access_token: result['AuthenticationResult']['IdToken']
 			};
 		} catch (e) {
 			code = 400;

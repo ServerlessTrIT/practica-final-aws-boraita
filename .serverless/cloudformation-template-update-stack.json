@@ -193,7 +193,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/monitorUserActivityApi/dev/1590937268323-2020-05-31T15:01:08.323Z/monitorUserActivityApi.zip"
+          "S3Key": "serverless/monitorUserActivityApi/dev/1590954473113-2020-05-31T19:47:53.113Z/monitorUserActivityApi.zip"
         },
         "FunctionName": "monitorUserActivityApi-dev-read",
         "Handler": "backend/user-activity/read.handler",
@@ -218,14 +218,14 @@
         "ReadLogGroup"
       ]
     },
-    "ReadLambdaVersionJYVkMzZbZw1YShcthCbhJVpc3UWqL9GxaiokGMIREvk": {
+    "ReadLambdaVersionKVAyolDN5g3gYLwtNyuGI9n5sgWaLXsNW4Tjw4f88": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ReadLambdaFunction"
         },
-        "CodeSha256": "vZHbWV9lkwVbitLSIUi9EEzbjPbDDVs5A+vrX2gGEfw="
+        "CodeSha256": "YNlSI74S2pg5r12c3lul6+Vv03yeM+IykQz8Shhn6JQ="
       }
     },
     "CreateLambdaFunction": {
@@ -235,7 +235,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/monitorUserActivityApi/dev/1590937268323-2020-05-31T15:01:08.323Z/monitorUserActivityApi.zip"
+          "S3Key": "serverless/monitorUserActivityApi/dev/1590954473113-2020-05-31T19:47:53.113Z/monitorUserActivityApi.zip"
         },
         "FunctionName": "monitorUserActivityApi-dev-create",
         "Handler": "backend/user-activity/create.handler",
@@ -260,14 +260,14 @@
         "CreateLogGroup"
       ]
     },
-    "CreateLambdaVersionGcAcYGLTu8yQtDJAVsZTcBZm1kJ1fQ8RftRfFJ9J7r4": {
+    "CreateLambdaVersionXrKC7aFPv4oALxwmUXJXIWw3174EPuYJ2XZnP89YdI": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateLambdaFunction"
         },
-        "CodeSha256": "vZHbWV9lkwVbitLSIUi9EEzbjPbDDVs5A+vrX2gGEfw="
+        "CodeSha256": "YNlSI74S2pg5r12c3lul6+Vv03yeM+IykQz8Shhn6JQ="
       }
     },
     "DeleteLambdaFunction": {
@@ -277,7 +277,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/monitorUserActivityApi/dev/1590937268323-2020-05-31T15:01:08.323Z/monitorUserActivityApi.zip"
+          "S3Key": "serverless/monitorUserActivityApi/dev/1590954473113-2020-05-31T19:47:53.113Z/monitorUserActivityApi.zip"
         },
         "FunctionName": "monitorUserActivityApi-dev-delete",
         "Handler": "backend/user-activity/delete.handler",
@@ -302,14 +302,14 @@
         "DeleteLogGroup"
       ]
     },
-    "DeleteLambdaVersionx9TWU9Vrv3hreBmwssSBIJZXIJqsLHwPWP9B6bk0": {
+    "DeleteLambdaVersion8k36MSswGNBwLCwhvbtQEA6OHg3P5PdFBBYsgl9GaU": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteLambdaFunction"
         },
-        "CodeSha256": "vZHbWV9lkwVbitLSIUi9EEzbjPbDDVs5A+vrX2gGEfw="
+        "CodeSha256": "YNlSI74S2pg5r12c3lul6+Vv03yeM+IykQz8Shhn6JQ="
       }
     },
     "LoginLambdaFunction": {
@@ -319,7 +319,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/monitorUserActivityApi/dev/1590937268323-2020-05-31T15:01:08.323Z/monitorUserActivityApi.zip"
+          "S3Key": "serverless/monitorUserActivityApi/dev/1590954473113-2020-05-31T19:47:53.113Z/monitorUserActivityApi.zip"
         },
         "FunctionName": "monitorUserActivityApi-dev-login",
         "Handler": "backend/users/login.handler",
@@ -344,14 +344,14 @@
         "LoginLogGroup"
       ]
     },
-    "LoginLambdaVersionBvOqW9m0dQrHitN91NtClHAaOPYEjkaEfHbOvGHDN6Y": {
+    "LoginLambdaVersionlhaCzpKHuv1HmJv0mRSYOC2Cc0mEmiwIHbP5cKKE": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "LoginLambdaFunction"
         },
-        "CodeSha256": "vZHbWV9lkwVbitLSIUi9EEzbjPbDDVs5A+vrX2gGEfw="
+        "CodeSha256": "YNlSI74S2pg5r12c3lul6+Vv03yeM+IykQz8Shhn6JQ="
       }
     },
     "SignupLambdaFunction": {
@@ -361,7 +361,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/monitorUserActivityApi/dev/1590937268323-2020-05-31T15:01:08.323Z/monitorUserActivityApi.zip"
+          "S3Key": "serverless/monitorUserActivityApi/dev/1590954473113-2020-05-31T19:47:53.113Z/monitorUserActivityApi.zip"
         },
         "FunctionName": "monitorUserActivityApi-dev-signup",
         "Handler": "backend/users/signup.handler",
@@ -386,14 +386,14 @@
         "SignupLogGroup"
       ]
     },
-    "SignupLambdaVersionKRCDmfVEe6Kl6sLNhiGu1egakg4PvmfAn1KrGVF1Y": {
+    "SignupLambdaVersionWEaVY3wiH8PxUUB0MTYh6KEWSj4hwS8wzmeR4Qack": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "SignupLambdaFunction"
         },
-        "CodeSha256": "vZHbWV9lkwVbitLSIUi9EEzbjPbDDVs5A+vrX2gGEfw="
+        "CodeSha256": "YNlSI74S2pg5r12c3lul6+Vv03yeM+IykQz8Shhn6JQ="
       }
     },
     "ConfirmsignupLambdaFunction": {
@@ -403,7 +403,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/monitorUserActivityApi/dev/1590937268323-2020-05-31T15:01:08.323Z/monitorUserActivityApi.zip"
+          "S3Key": "serverless/monitorUserActivityApi/dev/1590954473113-2020-05-31T19:47:53.113Z/monitorUserActivityApi.zip"
         },
         "FunctionName": "monitorUserActivityApi-dev-confirmsignup",
         "Handler": "backend/users/confirmsignup.handler",
@@ -428,14 +428,14 @@
         "ConfirmsignupLogGroup"
       ]
     },
-    "ConfirmsignupLambdaVersionH1FFRS4rkWoWfXkYmDqxfEDsc2M1XIip74xLhCWvNk": {
+    "ConfirmsignupLambdaVersionbD8YTh6A4DY9rdYa7HTlkKhf5LII2fV1u1ZFDQrw": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ConfirmsignupLambdaFunction"
         },
-        "CodeSha256": "vZHbWV9lkwVbitLSIUi9EEzbjPbDDVs5A+vrX2gGEfw="
+        "CodeSha256": "YNlSI74S2pg5r12c3lul6+Vv03yeM+IykQz8Shhn6JQ="
       }
     },
     "ApiGatewayRestApi": {
@@ -1060,7 +1060,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1590937206210": {
+    "ApiGatewayDeployment1590954407499": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -1097,11 +1097,11 @@
           }
         ]
       },
-      "DependsOn": "ApiGatewayDeployment1590937206210"
+      "DependsOn": "ApiGatewayDeployment1590954407499"
     },
     "ApiGatewayUsagePlan": {
       "Type": "AWS::ApiGateway::UsagePlan",
-      "DependsOn": "ApiGatewayDeployment1590937206210",
+      "DependsOn": "ApiGatewayDeployment1590954407499",
       "Properties": {
         "ApiStages": [
           {
@@ -1460,37 +1460,37 @@
     "ReadLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ReadLambdaVersionJYVkMzZbZw1YShcthCbhJVpc3UWqL9GxaiokGMIREvk"
+        "Ref": "ReadLambdaVersionKVAyolDN5g3gYLwtNyuGI9n5sgWaLXsNW4Tjw4f88"
       }
     },
     "CreateLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateLambdaVersionGcAcYGLTu8yQtDJAVsZTcBZm1kJ1fQ8RftRfFJ9J7r4"
+        "Ref": "CreateLambdaVersionXrKC7aFPv4oALxwmUXJXIWw3174EPuYJ2XZnP89YdI"
       }
     },
     "DeleteLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteLambdaVersionx9TWU9Vrv3hreBmwssSBIJZXIJqsLHwPWP9B6bk0"
+        "Ref": "DeleteLambdaVersion8k36MSswGNBwLCwhvbtQEA6OHg3P5PdFBBYsgl9GaU"
       }
     },
     "LoginLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LoginLambdaVersionBvOqW9m0dQrHitN91NtClHAaOPYEjkaEfHbOvGHDN6Y"
+        "Ref": "LoginLambdaVersionlhaCzpKHuv1HmJv0mRSYOC2Cc0mEmiwIHbP5cKKE"
       }
     },
     "SignupLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "SignupLambdaVersionKRCDmfVEe6Kl6sLNhiGu1egakg4PvmfAn1KrGVF1Y"
+        "Ref": "SignupLambdaVersionWEaVY3wiH8PxUUB0MTYh6KEWSj4hwS8wzmeR4Qack"
       }
     },
     "ConfirmsignupLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ConfirmsignupLambdaVersionH1FFRS4rkWoWfXkYmDqxfEDsc2M1XIip74xLhCWvNk"
+        "Ref": "ConfirmsignupLambdaVersionbD8YTh6A4DY9rdYa7HTlkKhf5LII2fV1u1ZFDQrw"
       }
     },
     "ServiceEndpoint": {

@@ -2,12 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { JwtModule } from '@auth0/angular-jwt';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthService } from './core/services/auth.service';
-import { MainModule } from './components/main.module';
+import { LoginGuard } from './public/login.guard';
 
 @NgModule({
   declarations: [
@@ -22,12 +22,11 @@ import { MainModule } from './components/main.module';
       config: {
         tokenGetter: tokenGetter => localStorage.getItem('access_token'),
         whitelistedDomains: [''],
-        blacklistedRoutes: ['https://tehqnbbl1i.execute-api.eu-central-1.amazonaws.com/DEV/']
+        blacklistedRoutes: ['']
       }
-    }),
-    MainModule
+    })
   ],
-  providers: [AuthService],
+  providers: [AuthService, LoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

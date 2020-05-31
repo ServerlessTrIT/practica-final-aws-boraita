@@ -19,13 +19,6 @@ module.exports.handler = async (event, context) => {
 		.promise();
 	return {
 		statusCode: 200,
-		body: JSON.stringify(
-			{
-				message: 'Deleted Item!',
-				input: monitor,
-			},
-			null,
-			2
-		),
+		body: JSON.stringify(result, null, 2),
 	};
 };

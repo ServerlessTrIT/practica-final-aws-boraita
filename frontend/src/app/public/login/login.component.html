@@ -1,7 +1,7 @@
 <mat-card>
   <mat-card-content>
     <form [formGroup]="form" (ngSubmit)="submit()">
-      <h2>{{isLogging ? 'Login' : 'Registration'}}</h2>
+      <h2>Login</h2>
       <mat-error *ngIf="loginInvalid">
         The username and password were not recognized
       </mat-error>
@@ -19,7 +19,7 @@
           Please provide a valid password
         </mat-error>
       </mat-form-field>
-      <button mat-raised-button color="primary" [disabled]="form.invalid">{{isLogging ? 'Login' : 'Register'}}</button>
+      <button mat-raised-button color="primary" [disabled]="form.invalid">Login</button>
     </form>
   </mat-card-content>
 </mat-card>

@@ -1,7 +1,7 @@
 'use strict';
 var AWS = require('aws-sdk');
 
-exports.handler = async (event) => {
+exports.handler = (event) => {
 	const cognito = new AWS.CognitoIdentityServiceProvider();
 	var code = 200;
 	var body = {};
@@ -17,7 +17,7 @@ exports.handler = async (event) => {
 			Username: email,
 		};
 		try {
-			const returnConfirm = cognito.confirmSignUp(params, function (err, data) {
+			const returnConfirm = cognito.confirmSignUp(params, (err, data) => {
 				if (err) {
 					console.log('Error->', err, err.stack);
 					body = { message: 'There are an error', error: err };
@@ -28,6 +28,7 @@ exports.handler = async (event) => {
 					return data;
 				}
 			});
+			console.log(returnConfirm);
 		} catch (e) {
 			console.log(e);
 			code = 400;
