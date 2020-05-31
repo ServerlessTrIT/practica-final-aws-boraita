@@ -1,0 +1,11 @@
+Resources:
+  RmnAuthorizer:
+    Type: AWS::ApiGateway::Authorizer
+    Properties:
+      Name: RmnAuthorizer-${self:provider.stage}
+      RestApiId:
+        Ref: ApiGatewayRestApi
+      Type: COGNITO_USER_POOLS
+      ProviderARNs:
+        - !GetAtt RmnCognitoPool.Arn
+      IdentitySource: method.request.header.Authorization

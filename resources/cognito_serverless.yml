@@ -1,0 +1,39 @@
+Resources:
+  RmnCognitoPool:
+    Type: AWS::Cognito::UserPool
+    Properties:
+      UserPoolName: RmnCognitoPool-${self:provider.stage}
+      Policies:
+        PasswordPolicy:
+          MinimumLength: 8
+          RequireUppercase: true
+          RequireLowercase: true
+          RequireNumbers: true
+          RequireSymbols: true
+          TemporaryPasswordValidityDays: 15
+      UsernameAttributes:
+        - email
+      AutoVerifiedAttributes:
+        - email
+      EmailVerificationMessage: 'Your verification code is {####}'
+      EmailVerificationSubject: 'Your code for User monitor activity'
+      MfaConfiguration: OFF
+      UserPoolTags:
+        Env: ${self:provider.stage}
+      AdminCreateUserConfig:
+        AllowAdminCreateUserOnly: false
+        InviteMessageTemplate:
+          EmailMessage: 'This is your account {username} and password for User monitor activity {####}'
+          EmailSubject: 'Your User monitor activity account'
+      UsernameConfiguration:
+        CaseSensitive: false
+
+  RmnCognitoPoolClient:
+    Type: AWS::Cognito::UserPoolClient
+    Properties:
+      ClientName: RmnCognitoPoolClient-${self:provider.stage}
+      ExplicitAuthFlows:
+        - USER_PASSWORD_AUTH
+      RefreshTokenValidity: 30
+      UserPoolId:
+        Ref: RmnCognitoPool
